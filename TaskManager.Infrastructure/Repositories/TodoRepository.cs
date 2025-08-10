@@ -15,13 +15,14 @@ public class TodoRepository : ITodoRepository
         return Task.CompletedTask;
     }
 
-    public void DeleteTodoAsync(int id)
+    public Task DeleteTodoAsync(int id)
     {
         var todo = _todos.FirstOrDefault(t => t.Id == id);
         if (todo != null)
         {
             _todos.Remove(todo);
         }
+        return Task.CompletedTask;
     }
 
     public Task<IEnumerable<Todo>> GetAllTodosAsync()

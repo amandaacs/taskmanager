@@ -4,11 +4,11 @@ using TaskManager.TaskManager.Application.Interfaces;
 
 namespace TaskManager.TaskManager.Application.UseCases;
 
-public class ListTasks
+public class ListTodos
 {
     private readonly ITodoRepository _todoRepository;
 
-    public ListTasks(ITodoRepository todoRepository)
+    public ListTodos(ITodoRepository todoRepository)
     {
         _todoRepository = todoRepository;
     }

@@ -4,10 +4,10 @@ using TaskManager.TaskManager.Application.Interfaces;
 
 namespace TaskManager.TaskManager.Application.UseCases;
 
-public class FindTaskById
+public class FindTodoById
 {
     private readonly ITodoRepository _todoRepository;
-    public FindTaskById(ITodoRepository todoRepository)
+    public FindTodoById(ITodoRepository todoRepository)
     {
         _todoRepository = todoRepository;
     }

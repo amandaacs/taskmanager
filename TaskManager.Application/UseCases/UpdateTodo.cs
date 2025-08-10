@@ -5,11 +5,11 @@ using TaskManager.TaskManager.Domain.Entities;
 
 namespace TaskManager.TaskManager.Application.UseCases;
 
-public class UpdateTask
+public class UpdateTodo
 {
     private readonly ITodoRepository _todoRepository;
 
-    public UpdateTask(ITodoRepository todoRepository)
+    public UpdateTodo(ITodoRepository todoRepository)
     {
         _todoRepository = todoRepository;
     }

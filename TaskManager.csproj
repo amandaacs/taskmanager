@@ -8,13 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Properties/Interfaces/" />
     <Folder Include="TaskManager.Application/Services/" />
-    <Folder Include="TaskManager.Web/" />
-    <Folder Include="TaskManager.Web/Controllers/" />
     <Folder Include="TaskManager.Web/Middleware/" />
   </ItemGroup>
 

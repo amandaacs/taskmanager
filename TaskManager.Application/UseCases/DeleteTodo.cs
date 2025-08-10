@@ -12,13 +12,13 @@ public class DeleteTodo
         _todoRepository = todoRepository;
     }
 
-    public async void ExecuteAsync(int id)
+    public async Task ExecuteAsync(int id)
     {
         var todo = await _todoRepository.GetByIdAsync(id);
         if (todo == null)
         {
             throw new KeyNotFoundException("Tarefa não encontrada");
         }
-        _todoRepository.DeleteTodoAsync(id);
+        await _todoRepository.DeleteTodoAsync(id);
     }
 }
